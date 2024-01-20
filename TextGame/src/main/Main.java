@@ -30,8 +30,6 @@ public class Main {
 	        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	        frame.getContentPane().setBackground(Color.black);
 	        frame.setLayout(null);
-	        frame.setVisible(true);
-	        con = frame.getContentPane();
 
 	        titleNamePanel = new JPanel();
 	        titleNamePanel.setBounds(100, 100, 600, 150);
@@ -57,7 +55,8 @@ public class Main {
 	        titleNamePanel.add(titleNameLabel);
 	        startButtonPanel.add(startbutton);
 
-
+            frame.setVisible(true);
+	        con = frame.getContentPane();
 	        con.add(titleNamePanel);
 	        con.add(startButtonPanel);
 	}
